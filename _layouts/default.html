@@ -47,15 +47,12 @@
     <div class="wrap">
 
         <header>
-            <img src="/assets/images/logo.svg" class="" alt="Patrick's Irish Pub - Greeley, Colorado" />
+            <img src="/assets/images/logo.svg" class="logo" alt="Patrick's Irish Pub - Greeley, Colorado" />
         </header>
 
         <section class="main">
             {{content}}
         </section>
-
-
-
 
 
         <section class="contact clearfix">
@@ -66,8 +63,8 @@
             <div class="contact-form" id="email">
                 <form action="#" method="post">
                     <h2>Contact Us</h2>
-                    <input type="hidden" name="_to" value="todd@thesubiedoctor.com,team@variantstudios.com">
-                    <input type="hidden" name="_subject" value="The Subie Doctor - Contact Form">
+                    <input type="hidden" name="_to" value="team@variantstudios.com">
+                    <input type="hidden" name="_subject" value="Patrick's Irish Pub - Contact Form">
                     <input type="text" name="_gotcha" style="display: none;">
                     <label for="name">Name</label>
                     <input type="text" name="name" required>
@@ -75,31 +72,57 @@
                     <input type="email" name="email" required>
                     <label for="message">Message</label>
                     <textarea name="message" rows="6" required></textarea>
-                    <div class="g-recaptcha" data-sitekey="6Ld7ZBwUAAAAAO8rCWV_bk2jih_VVqUCQ3QlB1No"></div><br><br>
+                    <div class="g-recaptcha" data-sitekey="6LcT_CIUAAAAADkKErzzsHxJpqBn0BztTkrduO4X"></div><br><br>
                     <input class="sendButton" type="submit" name="Submit" value="Send">
                 </form>
 
             </div>
         </section>
 
+        <section class="social clearfix">
+            <div class="facebook">
+                <div id="fb-root"></div>
+                <script>
+                    (function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=824904011007411";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                </script>
+
+                <div class="fb-page" data-href="https://www.facebook.com/variantstudios/" data-tabs="timeline" data-width="500" adapt_container_width="true"
+                    data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+            </div>
+
+            <div class="twitter">
+                <a class="twitter-timeline" data-width="500" data-height="500" href="https://twitter.com/patricksgreeley">Tweets by patricksgreeley</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </section>
+
+
+
+
 
         <section class="untappd">
             <div id="menu-container-untappd-1" class="untappd-menu"></div>
             <script type="text/javascript">
-                !function (e, n) {
-                    var t = document.createElement("script"), a = document.getElementsByTagName("script")[0];
-                    t.async = 1, a.parentNode.insertBefore(t, a), t.onload = t.onreadystatechange = function (e, a) {
-                        (a || !t.readyState || /loaded|complete/.test(t.readyState)) && (t.onload = t.onreadystatechange = null, t = void 0, a || n && n())
-                    },
-                        t.src = e
-                }("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js", function () {
-                    PreloadEmbedMenu("menu-container-untappd-1", '3591', '10840')
-                });
+                    !function (e, n) {
+                        var t = document.createElement("script"), a = document.getElementsByTagName("script")[0];
+                        t.async = 1, a.parentNode.insertBefore(t, a), t.onload = t.onreadystatechange = function (e, a) {
+                            (a || !t.readyState || /loaded|complete/.test(t.readyState)) && (t.onload = t.onreadystatechange = null, t = void 0, a || n && n())
+                        },
+                            t.src = e
+                    }("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js", function () {
+                        PreloadEmbedMenu("menu-container-untappd-1", '3591', '10840')
+                    });
             </script>
         </section>
 
         <footer>
-            footer
+            <p>&copy; 2017 Patrick's Pub Greeley, Colorado.</p>
         </footer>
 
     </div>
@@ -122,6 +145,8 @@
                 ga('send', 'pageview');
     </script>
     {% endif %}
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="/assets/js/prod/scripts.js"></script>
 </body>
 

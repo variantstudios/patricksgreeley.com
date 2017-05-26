@@ -18,7 +18,7 @@ html {
 
 /* line 6, ../sass/partials/styleguide/type/_base-type.scss */
 body {
-  color: white;
+  color: #282425;
 }
 
 /* line 10, ../sass/partials/styleguide/type/_base-type.scss */
@@ -95,7 +95,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   margin: 16px 0;
   line-height: 1.3;
-  color: white;
+  color: #282425;
   font-family: sans-serif;
 }
 
@@ -126,8 +126,8 @@ div.btn a {
   display: block;
   text-decoration: none;
   text-align: center;
-  background-color: white;
-  border: 1px solid #f2f2f2;
+  background-color: #282425;
+  border: 1px solid #1b1819;
   border-radius: 2px;
   color: white;
   cursor: pointer;
@@ -139,7 +139,7 @@ div.btn a {
 }
 /* line 56, ../sass/partials/global/_mixins.scss */
 div.btn a:hover {
-  background-color: #fafafa;
+  background-color: #231f20;
 }
 /* line 27, ../sass/partials/styleguide/type/_links.scss */
 div.btn a:hover {
@@ -184,7 +184,7 @@ input[type="text"], input[type="email"], input[type="name"], input[type="passwor
 }
 /* line 9, ../sass/partials/styleguide/forms/_inputs.scss */
 input[type="text"]:active, input[type="text"]:focus, input[type="email"]:active, input[type="email"]:focus, input[type="name"]:active, input[type="name"]:focus, input[type="password"]:active, input[type="password"]:focus, input[type="file"]:active, input[type="file"]:focus {
-  border: 1px solid white;
+  border: 1px solid #282425;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
@@ -203,7 +203,7 @@ textarea {
 }
 /* line 9, ../sass/partials/styleguide/forms/_textarea.scss */
 textarea:active, textarea:focus {
-  border: 1px solid white;
+  border: 1px solid #282425;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
@@ -211,8 +211,8 @@ textarea:active, textarea:focus {
 
 /* line 1, ../sass/partials/styleguide/forms/_buttons.scss */
 input[type="submit"] {
-  background-color: #999999;
-  border: 1px solid #6286bd;
+  background-color: #4e4a4b;
+  border: 1px solid #282425;
   border-radius: 3px;
   color: white;
   cursor: pointer;
@@ -220,19 +220,17 @@ input[type="submit"] {
   font-size: 100%;
   font-family: sans-serif;
   display: inline-block;
-  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), inset 0px 2px 0px 0px white;
-          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), inset 0px 2px 0px 0px white;
   border-radius: 3px;
   padding: 10px 25px;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   font-size: .8em;
-  color: #373737;
+  color: #fff;
   cursor: pointer;
 }
 /* line 56, ../sass/partials/global/_mixins.scss */
 input[type="submit"]:hover {
-  background-color: #949494;
+  background-color: #494546;
 }
 
 /* line 2, ../sass/partials/styleguide/forms/_label.scss */
@@ -384,7 +382,7 @@ ul.pager li a:visited {
 }
 /* line 28, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a:hover {
-  color: white;
+  color: #282425;
 }
 /* line 31, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a:active {
@@ -421,7 +419,7 @@ ul.pager li a:visited {
 /* line 52, ../sass/partials/design/blocks/_main-navigation.scss */
 .js .menu-btn {
   padding: 1em;
-  background: white;
+  background: #282425;
   border: none;
   color: #fff;
   font-weight: 700;
@@ -449,30 +447,18 @@ ul.pager li a:visited {
 }
 
 /* line 1, ../sass/partials/design/regions/_header.scss */
-.logo {
+header {
   text-align: center;
 }
-@media (min-width: 50em) {
-  /* line 1, ../sass/partials/design/regions/_header.scss */
-  .logo {
-    width: 33.33333%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0;
-    clear: none;
-  }
-}
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
-.no-mq .logo {
-  width: 33.33333%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
+
+/* line 4, ../sass/partials/design/regions/_header.scss */
+.logo {
+  height: 200px;
+  margin: 2rem 0;
 }
 
 @media (min-width: 50em) {
-  /* line 7, ../sass/partials/design/regions/_header.scss */
+  /* line 8, ../sass/partials/design/regions/_header.scss */
   .main-nav {
     width: 65.95745%;
     float: right;
@@ -490,7 +476,7 @@ ul.pager li a:visited {
   clear: none;
 }
 
-/* line 13, ../sass/partials/design/regions/_header.scss */
+/* line 14, ../sass/partials/design/regions/_header.scss */
 .header-wrapper {
   padding: 1em 0;
   background: white;
@@ -620,6 +606,65 @@ main, header, footer, section, aside {
   clear: none;
 }
 
+/* line 12, ../sass/partials/design/regions/_contact.scss */
+.contact {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* line 1, ../sass/partials/design/regions/_untappd.scss */
+.untappd {
+  background: #fff;
+  padding: 1.5rem;
+}
+
+/* line 1, ../sass/partials/design/regions/_social.scss */
+.facebook {
+  text-align: center;
+}
+@media (min-width: 50em) {
+  /* line 1, ../sass/partials/design/regions/_social.scss */
+  .facebook {
+    width: 48.93617%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .facebook {
+  width: 48.93617%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+
+/* line 7, ../sass/partials/design/regions/_social.scss */
+.twitter {
+  text-align: center;
+}
+@media (min-width: 50em) {
+  /* line 7, ../sass/partials/design/regions/_social.scss */
+  .twitter {
+    width: 48.93617%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .twitter {
+  width: 48.93617%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
 /* line 2, ../sass/partials/design/views/_team.scss */
 .team-list .person {
   padding-bottom: 2em;
@@ -673,7 +718,7 @@ main, header, footer, section, aside {
   height: 25px;
   border-radius: 50%;
   margin-bottom: -5px;
-  border: 2px solid white;
+  border: 2px solid #282425;
 }
 /* line 16, ../sass/partials/design/views/_blog.scss */
 .blog-wrapper .right-blog ul {
@@ -686,7 +731,7 @@ main, header, footer, section, aside {
 }
 /* line 21, ../sass/partials/design/views/_blog.scss */
 .blog-wrapper .right-blog ul li.tag-label {
-  background: white;
+  background: #282425;
   padding: 2px 5px;
   border-radius: 3px;
   font-size: .8rem;
