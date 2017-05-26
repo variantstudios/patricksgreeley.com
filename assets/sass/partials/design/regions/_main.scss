@@ -6,8 +6,20 @@
 }
 
 
-main {
+.main {
   @include clearfix;
   padding: 2em 0;
 
+}
+.header-bg-color.header-font-color.divider-color.menu-header-hideable.menu-header,
+.menu-nav.ut-row.divider-color,
+.menu-info.divider-color,
+.section-header-bg-color.section-title-color.section-heading.padding-left.padding-right {
+  display: none;
+}
+.tab-content .section.item-bg-color {
+    padding-top: 0;
+}
+.item-bg-color.menu-items-container {
+    padding-top: 20px;
 }
