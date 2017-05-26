@@ -1,11 +1,16 @@
 
 .about {
-    margin: 5rem 0;
+    margin: 8rem 0 5rem 0;
     position: relative;
     background: #fff;
     padding: 1.5rem;
     img {
         float: left;
-        margin: 0 1rem 0.5rem 1rem;
+         @include breakpoint($bp-medium, $no-query: ".no-mq") {
+            margin: 0 1rem 0.5rem 1rem;
+         }
+    }
+    @include breakpoint($bp-medium, $no-query: ".no-mq") {
+        margin: 5rem 0;
     }
 }
