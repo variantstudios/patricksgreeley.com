@@ -11,6 +11,6 @@
          }
     }
     @include breakpoint($bp-medium, $no-query: ".no-mq") {
-        margin: 5rem 0;
+        margin: 8rem 0;
     }
 }
