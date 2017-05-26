@@ -500,7 +500,7 @@ header {
 .fixed {
   z-index: 100;
   position: fixed;
-  top: 0;
+  top: -1px;
   left: 0;
   margin-top: 0;
   min-width: 100%;
@@ -558,8 +558,18 @@ nav ul li a.link {
 /* line 77, ../sass/partials/design/regions/_header.scss */
 .skewed h3 {
   color: yellow;
-  font-size: 50px;
+  font-size: 40px;
   margin: 12px 20px 0 20px;
+}
+@media (min-width: 75em) {
+  /* line 77, ../sass/partials/design/regions/_header.scss */
+  .skewed h3 {
+    font-size: 50px;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .skewed h3 {
+  font-size: 50px;
 }
 
 /* line 1, ../sass/partials/design/regions/_main.scss */
@@ -837,7 +847,7 @@ main, header, footer, section, aside {
 
 /* line 2, ../sass/partials/design/regions/_about.scss */
 .about {
-  margin: 5rem 0;
+  margin: 8rem 0 5rem 0;
   position: relative;
   background: #fff;
   padding: 1.5rem;
@@ -845,7 +855,26 @@ main, header, footer, section, aside {
 /* line 7, ../sass/partials/design/regions/_about.scss */
 .about img {
   float: left;
+}
+@media (min-width: 50em) {
+  /* line 7, ../sass/partials/design/regions/_about.scss */
+  .about img {
+    margin: 0 1rem 0.5rem 1rem;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .about img {
   margin: 0 1rem 0.5rem 1rem;
+}
+@media (min-width: 50em) {
+  /* line 2, ../sass/partials/design/regions/_about.scss */
+  .about {
+    margin: 5rem 0;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .about {
+  margin: 5rem 0;
 }
 
 /* line 2, ../sass/partials/design/views/_team.scss */
