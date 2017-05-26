@@ -10,3 +10,55 @@
         @include grid-span(6,7);
     }
 }
+
+
+
+.soc {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.soc li {
+    display: inline-block;
+    margin: 12px;
+    margin: 1.2rem;
+}
+.soc a.icon, .soc svg {
+  display: block;
+}
+.soc a.link {
+    color: #fff;
+    vertical-align: 42px;
+    font-size: 32px;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+    &:hover {
+        color: #fff;
+        font-size: 42px;
+        transition: all 0.2s ease-out;
+  }
+}
+.soc a.icon {
+  position: relative;
+  height: 50px;
+  height: 5.0rem;
+  width: 50px;
+  width: 5.0rem;
+  transition: all 0.5s ease-out;
+    color: #fff;
+  fill: #fff;
+  &:hover {
+    border-radius: 100%;
+    color: #fff;
+    fill: #fff;
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    transition: all 0.5s ease-out;
+  }
+}
+.soc svg {
+  height: 100%;
+  width: 100%;
+}

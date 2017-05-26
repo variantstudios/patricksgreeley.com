@@ -46,78 +46,140 @@
 
     <div class="wrap">
 
-        <header>
+        <!--<header>
             <img src="/assets/images/logo.svg" class="logo" alt="Patrick's Irish Pub - Greeley, Colorado" />
         </header>
 
-        <section class="main">
-            {{content}}
+        <nav class="clearfix">
+            <ul class="soc">
+                <li><a href="#" class="link">contact</a></li>
+                <li><a href="#" class="link">link</a></li>
+                <li><a href="#" class="link">beer list</a></li>
+                <li>
+                    <a href="#" class="facebook icon" title="facebook">
+                        <svg viewBox="0 0 512 512">
+                            <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path>
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="twitter icon" title="twitter">
+                        <svg viewBox="0 0 512 512">
+                            <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"></path>
+                        </svg>
+                    </a>
+                </li>
+        </nav>-->
+        <header>
+            <div class="header-top">
+                <div class="inner">
+                    <img src="/assets/images/logo.svg" class="logo" alt="Patrick's Irish Pub - Greeley, Colorado" />
+                </div>
+            </div>
+            <div class="header-bottom">
+
+                <div class="inner">
+                    <nav>
+                        <ul>
+                            <li><a href="#about" class="link">about</a></li>
+                            <li><a href="#contact" class="link">contact</a></li>
+                            <li><a href="#beer" class="link">beer list</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <section class="about clearfix" id="about">
+            <div class="skewed">
+                <h3>about</h3>
+            </div>
+            <img src="/assets/images/Patricks-exterior-mockup-v2.jpg" alt="Location" />
+            <p>Hand-built over the course of eight months, Patrick's Irish Pub finally opened its doors in February 2009 with
+                15 beers on tap and the mission to create a sort of social/conversational space. Over the 7 years in business,
+                a passion has developed for the art behind brewing and I work really hard to find those rarer (unicorn) products
+                and obtain them. In today's beer bar culture, 31 drought lines put us at a mid range quantity-wise selection,
+                however come to Patrick's and see for yourself the relatively higher ratio of super interesting beers to
+                the relatively more common ones. If selection quantity is ever in doubt, the dedicated, temperature-controlled
+                beer cellar in the basement houses an expansive collection of rare and vintage beers, which brings the total
+                number to nigh 150.</p>
+            <p>With the exception of a permanent Irish Nitro Stout, and some exceptional local award winning sessionable beers,
+                all our products change with every keg. Local brewers Wiley Roots, Weldwerks and Crabtree can always be found
+                on tap, and Crooked Stave and Greenflash also have permanent handles. Beers can rotate quite quickly so that
+                is why we post a real time list online, but follow our twitter feed @patricksgreeley to follow the beers
+                as we tap them. To maintain the integrity of the product we leave no keg tapped beyond one month.</p>
+            <p>We are grateful to have some excellent traditional musicians playing on a weekly basis. The Irish Session has
+                been at Patrick's since the beginning and I can't recommend the experience enough. The tradition comes from
+                pubs in Ireland where friends gather with their instruments for an informal "folk session" and this occurs
+                every Thursday night. Recently a Blue Grass Session has become established every Saturday night, and revolves
+                around the same idea of friends getting together and making music.</p>
+            <p>After beer, whiskey is our next strength. More development to come in January; at the moment we have about 60
+                whiskeys. Explore recent arrivals: A.D. Laws Denver Cask Strength Single Barrel Secale Straight Rye, Talisker
+                18yr, Highland Park 18yr, Leopold Bros Denver Maryland-Style Rye, and Woody Creek Rye.</p>
         </section>
 
 
-        <section class="contact clearfix">
+        <section class="contact clearfix" id="contact">
+            <div class="skewed">
+                <h3>contact</h3>
+            </div>
             <div class="map">
                 <iframe id="map-canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12149.350873267835!2d-104.6910225!3d40.4235202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4bf1cc05aba891b8!2sPatrick&#39;s+Irish+Pub!5e0!3m2!1sen!2sus!4v1495764943992"
                     width="100%" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                    <div class="content">
+                        <p class="tel phone-icon">(970) 301-4683</p>
+                    </div>
+
+                    <div class="hours">
+                        <p>7 days-a-week<br> 3 pm to 2 am</p>
+                    </div>
             </div>
             <div class="contact-form" id="email">
                 <form action="#" method="post">
-                    <h2>Contact Us</h2>
+                    <h3>Contact Us</h3>
+                    <p>Shoot us a message:</p>
                     <input type="hidden" name="_to" value="team@variantstudios.com">
                     <input type="hidden" name="_subject" value="Patrick's Irish Pub - Contact Form">
                     <input type="text" name="_gotcha" style="display: none;">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" required>
-                    <label for="message">Message</label>
-                    <textarea name="message" rows="6" required></textarea>
-                    <div class="g-recaptcha" data-sitekey="6LcT_CIUAAAAADkKErzzsHxJpqBn0BztTkrduO4X"></div><br><br>
-                    <input class="sendButton" type="submit" name="Submit" value="Send">
+                    <div class="webform-component">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="webform-component">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="webform-component">
+                        <label for="message">Message</label>
+                        <textarea name="message" rows="6" required></textarea>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LcT_CIUAAAAADkKErzzsHxJpqBn0BztTkrduO4X"></div>
+                    <input class="sendButton" type="submit" value="Send">
                 </form>
 
             </div>
         </section>
 
-        <section class="social clearfix">
-            <div class="facebook">
-                <div id="fb-root"></div>
-                <script>
-                    (function (d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=824904011007411";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));
-                </script>
 
-                <div class="fb-page" data-href="https://www.facebook.com/variantstudios/" data-tabs="timeline" data-width="500" adapt_container_width="true"
-                    data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+        <section class="untappd" id="beer">
+            <div class="skewed">
+                <h3>what's on tap</h3>
             </div>
-
-            <div class="twitter">
-                <a class="twitter-timeline" data-width="500" data-height="500" href="https://twitter.com/patricksgreeley">Tweets by patricksgreeley</a>
-                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-        </section>
-
-
-
-
-
-        <section class="untappd">
             <div id="menu-container-untappd-1" class="untappd-menu"></div>
             <script type="text/javascript">
-                    !function (e, n) {
-                        var t = document.createElement("script"), a = document.getElementsByTagName("script")[0];
-                        t.async = 1, a.parentNode.insertBefore(t, a), t.onload = t.onreadystatechange = function (e, a) {
-                            (a || !t.readyState || /loaded|complete/.test(t.readyState)) && (t.onload = t.onreadystatechange = null, t = void 0, a || n && n())
-                        },
-                            t.src = e
-                    }("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js", function () {
-                        PreloadEmbedMenu("menu-container-untappd-1", '3591', '10840')
-                    });
+                !function (e, n) {
+                    var t = document.createElement("script"), a = document.getElementsByTagName("script")[0];
+                    t.async = 1, a.parentNode.insertBefore(t, a), t.onload = t.onreadystatechange = function (e, a) {
+                        (a || !t.readyState || /loaded|complete/.test(t.readyState)) && (t.onload = t.onreadystatechange = null, t = void 0, a || n && n())
+                    },
+                        t.src = e
+                }("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js", function () {
+                    PreloadEmbedMenu("menu-container-untappd-1", '3591', '10840')
+                });
             </script>
         </section>
 

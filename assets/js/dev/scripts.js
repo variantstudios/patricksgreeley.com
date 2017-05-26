@@ -15,4 +15,18 @@ $(document).ready(function() {
       $(this).find('iframe').addClass('clicked')})
   .mouseleave(function(){
       $(this).find('iframe').removeClass('clicked')});
+
+$(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 140) /* .header-top height */ {
+      $('.header-bottom').addClass('fixed');
+      // $('.wild-title').css('margin-left', '0');
+    } else {
+      $('.header-bottom').removeClass('fixed');
+      // $('.wild-title').css('margin-left', '-300px');
+    }
+  });
+});
+
+
 });
