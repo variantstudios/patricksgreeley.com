@@ -10,7 +10,15 @@
 }
 
 .contact {
+    margin-top: 5rem;
+    position: relative;
     background: #fff;
     padding: 1.5rem;
     margin: 2rem 0;
+    h3 {
+        margin-top: 0;
+    }
+    .g-recaptcha {
+        margin: 1rem 0 .5rem 0;
+    }
 }
