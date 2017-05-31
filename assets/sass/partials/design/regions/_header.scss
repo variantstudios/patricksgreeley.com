@@ -1,10 +1,13 @@
 header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
+  @include breakpoint($bp-medium, $no-query: ".no-mq") {
+    margin-bottom: 5rem;
+  }
 }
 .logo {
-  height: 100px;
-  margin: 1rem 0;
+  height: 120px;
+  margin: 1rem 0 .5rem 0;
 }
 .main-nav {
   @include breakpoint($bp-medium, $no-query: ".no-mq") {
@@ -20,7 +23,7 @@ header {
 
 header {
   position: relative;
-  height: 106px;
+  height: 145px;
   color: #fff;
   //background-color: #4b9cdb;
   //border-bottom: 2px solid #5A7DB9;
@@ -47,21 +50,28 @@ nav {
     margin: 0;
     li {
       display: inline-block;
-      margin: 0 2rem 0 0;
+      margin: 0 .5rem 0 0;
+       @include breakpoint($bp-medium, $no-query: ".no-mq") {
+          margin: 0 2rem 0 0;
+       }
       a.link {
         font-family: $special-font;
         color: #fff;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 20px;
+        @include breakpoint($bp-medium, $no-query: ".no-mq") {
+          font-size: 30px;
+        }
+        
       }
     }
   }
 }
 
 .skewed {
-    margin-top: 100px;
+    margin-top: 120px;
     background-color: #282425;
-    height: 100px;
+    height: 80px;
     padding-top: .5rem;
     transform: skewY(-10deg);
     position: absolute;
@@ -71,7 +81,9 @@ nav {
     //outline: 1px solid transparent;
     //box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.6);
     @include breakpoint($bp-xlarge, $no-query: ".no-mq") {
+      margin-top: 100px;
       left: -58px;
+      height: 100px;
     }
 }
 
@@ -79,9 +91,10 @@ nav {
 .skewed h3 {
    font-family: $special-font;
    color: yellow;
-    font-size: 40px;
-    margin: 12px 20px 0 20px;
+    font-size: 30px;
+    margin: 12px 10px 0px 10px;
     @include breakpoint($bp-xlarge, $no-query: ".no-mq") {
+      margin: 12px 20px 0 20px;
       font-size: 50px;
     }
 }
