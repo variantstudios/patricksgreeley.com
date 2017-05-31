@@ -455,17 +455,27 @@ footer {
 /* line 1, ../sass/partials/design/regions/_header.scss */
 header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
+}
+@media (min-width: 50em) {
+  /* line 1, ../sass/partials/design/regions/_header.scss */
+  header {
+    margin-bottom: 5rem;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq header {
+  margin-bottom: 5rem;
 }
 
-/* line 5, ../sass/partials/design/regions/_header.scss */
+/* line 8, ../sass/partials/design/regions/_header.scss */
 .logo {
-  height: 100px;
-  margin: 1rem 0;
+  height: 120px;
+  margin: 1rem 0 .5rem 0;
 }
 
 @media (min-width: 50em) {
-  /* line 9, ../sass/partials/design/regions/_header.scss */
+  /* line 12, ../sass/partials/design/regions/_header.scss */
   .main-nav {
     width: 65.95745%;
     float: right;
@@ -483,20 +493,20 @@ header {
   clear: none;
 }
 
-/* line 15, ../sass/partials/design/regions/_header.scss */
+/* line 18, ../sass/partials/design/regions/_header.scss */
 .header-wrapper {
   padding: 1em 0;
   background: white;
 }
 
-/* line 21, ../sass/partials/design/regions/_header.scss */
+/* line 24, ../sass/partials/design/regions/_header.scss */
 header {
   position: relative;
-  height: 106px;
+  height: 145px;
   color: #fff;
 }
 
-/* line 30, ../sass/partials/design/regions/_header.scss */
+/* line 33, ../sass/partials/design/regions/_header.scss */
 .fixed {
   z-index: 100;
   position: fixed;
@@ -512,29 +522,49 @@ header {
           box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.6);
 }
 
-/* line 45, ../sass/partials/design/regions/_header.scss */
+/* line 48, ../sass/partials/design/regions/_header.scss */
 nav ul {
   padding: 0;
   margin: 0;
 }
-/* line 48, ../sass/partials/design/regions/_header.scss */
+/* line 51, ../sass/partials/design/regions/_header.scss */
 nav ul li {
   display: inline-block;
+  margin: 0 .5rem 0 0;
+}
+@media (min-width: 50em) {
+  /* line 51, ../sass/partials/design/regions/_header.scss */
+  nav ul li {
+    margin: 0 2rem 0 0;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq nav ul li {
   margin: 0 2rem 0 0;
 }
-/* line 51, ../sass/partials/design/regions/_header.scss */
+/* line 57, ../sass/partials/design/regions/_header.scss */
 nav ul li a.link {
   font-family: "Chelsea Market", serif;
   color: #fff;
   text-decoration: none;
+  font-size: 20px;
+}
+@media (min-width: 50em) {
+  /* line 57, ../sass/partials/design/regions/_header.scss */
+  nav ul li a.link {
+    font-size: 30px;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq nav ul li a.link {
   font-size: 30px;
 }
 
-/* line 61, ../sass/partials/design/regions/_header.scss */
+/* line 71, ../sass/partials/design/regions/_header.scss */
 .skewed {
-  margin-top: 100px;
+  margin-top: 120px;
   background-color: #282425;
-  height: 100px;
+  height: 80px;
   padding-top: .5rem;
   -webkit-transform: skewY(-10deg);
       -ms-transform: skewY(-10deg);
@@ -545,31 +575,37 @@ nav ul li a.link {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 75em) {
-  /* line 61, ../sass/partials/design/regions/_header.scss */
+  /* line 71, ../sass/partials/design/regions/_header.scss */
   .skewed {
+    margin-top: 100px;
     left: -58px;
+    height: 100px;
   }
 }
 /* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .skewed {
+  margin-top: 100px;
   left: -58px;
+  height: 100px;
 }
 
-/* line 79, ../sass/partials/design/regions/_header.scss */
+/* line 91, ../sass/partials/design/regions/_header.scss */
 .skewed h3 {
   font-family: "Chelsea Market", serif;
   color: yellow;
-  font-size: 40px;
-  margin: 12px 20px 0 20px;
+  font-size: 30px;
+  margin: 12px 10px 0px 10px;
 }
 @media (min-width: 75em) {
-  /* line 79, ../sass/partials/design/regions/_header.scss */
+  /* line 91, ../sass/partials/design/regions/_header.scss */
   .skewed h3 {
+    margin: 12px 20px 0 20px;
     font-size: 50px;
   }
 }
 /* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .skewed h3 {
+  margin: 12px 20px 0 20px;
   font-size: 50px;
 }
 
@@ -712,6 +748,26 @@ main, header, footer, section, aside {
 /* line 21, ../sass/partials/design/regions/_contact.scss */
 .contact .g-recaptcha {
   margin: 1rem 0 .5rem 0;
+}
+/* line 25, ../sass/partials/design/regions/_contact.scss */
+.contact .ghost {
+  display: none;
+}
+/* line 28, ../sass/partials/design/regions/_contact.scss */
+.contact .address-block {
+  display: block;
+}
+@media (min-width: 50em) {
+  /* line 31, ../sass/partials/design/regions/_contact.scss */
+  .contact img {
+    width: 50%;
+    float: right;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .contact img {
+  width: 50%;
+  float: right;
 }
 
 /* line 1, ../sass/partials/design/regions/_untappd.scss */

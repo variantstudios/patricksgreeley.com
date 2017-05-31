@@ -21,4 +21,17 @@
     .g-recaptcha {
         margin: 1rem 0 .5rem 0;
     }
+
+    .ghost {
+        display: none;
+    }
+    .address-block {
+        display: block;
+    }
+    img {
+        @include breakpoint($bp-medium, $no-query: ".no-mq") {
+            width: 50%;
+            float: right;
+        }
+    }
 }
