@@ -759,15 +759,39 @@ main, header, footer, section, aside {
 }
 @media (min-width: 50em) {
   /* line 31, ../sass/partials/design/regions/_contact.scss */
-  .contact img {
-    width: 50%;
-    float: right;
+  .contact .left {
+    width: 48.93617%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
   }
 }
 /* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
-.no-mq .contact img {
-  width: 50%;
+.no-mq .contact .left {
+  width: 48.93617%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 50em) {
+  /* line 36, ../sass/partials/design/regions/_contact.scss */
+  .contact .right {
+    width: 48.93617%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .contact .right {
+  width: 48.93617%;
   float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
 }
 
 /* line 1, ../sass/partials/design/regions/_untappd.scss */

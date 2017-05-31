@@ -28,10 +28,14 @@
     .address-block {
         display: block;
     }
-    img {
+    .left {
         @include breakpoint($bp-medium, $no-query: ".no-mq") {
-            width: 50%;
-            float: right;
+            @include grid-span(6,1);
+        }
+    }
+    .right {
+        @include breakpoint($bp-medium, $no-query: ".no-mq") {
+            @include grid-span(6,7);
         }
     }
 }
