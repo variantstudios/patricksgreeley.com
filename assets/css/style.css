@@ -620,6 +620,32 @@ nav ul li a.link {
   font-size: 50px;
 }
 
+/* line 111, ../sass/partials/design/regions/_header.scss */
+.button.facebook {
+  background-color: #469;
+}
+/* line 113, ../sass/partials/design/regions/_header.scss */
+.button.facebook svg {
+  height: 50px;
+  fill: #fff;
+}
+
+/* line 118, ../sass/partials/design/regions/_header.scss */
+.button, .button:visited {
+  display: inline-block;
+  padding: .5rem .8rem;
+  margin-top: .4rem;
+  font-size: .8rem;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 250ms;
+          transition: all 250ms;
+}
+
 /* line 1, ../sass/partials/design/regions/_main.scss */
 .wrap {
   max-width: 1200px;
@@ -807,7 +833,7 @@ main, header, footer, section, aside {
 
 /* line 1, ../sass/partials/design/regions/_untappd.scss */
 .untappd {
-  margin-top: 7rem;
+  margin-top: 9rem;
   background: #fff;
   padding: 2.5rem 1.5rem 1.5rem 1.5rem;
   position: relative;
@@ -821,120 +847,6 @@ main, header, footer, section, aside {
 /* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .untappd {
   padding: 1.5rem;
-}
-
-/* line 1, ../sass/partials/design/regions/_social.scss */
-.facebook {
-  text-align: center;
-}
-@media (min-width: 50em) {
-  /* line 1, ../sass/partials/design/regions/_social.scss */
-  .facebook {
-    width: 48.93617%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0;
-    clear: none;
-  }
-}
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
-.no-mq .facebook {
-  width: 48.93617%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
-}
-
-/* line 7, ../sass/partials/design/regions/_social.scss */
-.twitter {
-  text-align: center;
-}
-@media (min-width: 50em) {
-  /* line 7, ../sass/partials/design/regions/_social.scss */
-  .twitter {
-    width: 48.93617%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-}
-/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
-.no-mq .twitter {
-  width: 48.93617%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-}
-
-/* line 16, ../sass/partials/design/regions/_social.scss */
-.soc {
-  display: block;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-/* line 23, ../sass/partials/design/regions/_social.scss */
-.soc li {
-  display: inline-block;
-  margin: 12px;
-  margin: 1.2rem;
-}
-
-/* line 28, ../sass/partials/design/regions/_social.scss */
-.soc a.icon, .soc svg {
-  display: block;
-}
-
-/* line 31, ../sass/partials/design/regions/_social.scss */
-.soc a.link {
-  color: #fff;
-  vertical-align: 42px;
-  font-size: 32px;
-  text-decoration: none;
-  -webkit-transition: all 0.2s ease-out;
-          transition: all 0.2s ease-out;
-}
-/* line 37, ../sass/partials/design/regions/_social.scss */
-.soc a.link:hover {
-  color: #fff;
-  font-size: 42px;
-  -webkit-transition: all 0.2s ease-out;
-          transition: all 0.2s ease-out;
-}
-
-/* line 43, ../sass/partials/design/regions/_social.scss */
-.soc a.icon {
-  position: relative;
-  height: 50px;
-  height: 5.0rem;
-  width: 50px;
-  width: 5.0rem;
-  -webkit-transition: all 0.5s ease-out;
-          transition: all 0.5s ease-out;
-  color: #fff;
-  fill: #fff;
-}
-/* line 52, ../sass/partials/design/regions/_social.scss */
-.soc a.icon:hover {
-  border-radius: 100%;
-  color: #fff;
-  fill: #fff;
-  -webkit-transform: scale(1.25);
-  -ms-transform: scale(1.25);
-      transform: scale(1.25);
-  -webkit-transition: all 0.5s ease-out;
-          transition: all 0.5s ease-out;
-}
-
-/* line 61, ../sass/partials/design/regions/_social.scss */
-.soc svg {
-  height: 100%;
-  width: 100%;
 }
 
 /* line 2, ../sass/partials/design/regions/_about.scss */
