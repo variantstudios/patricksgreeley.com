@@ -68,6 +68,14 @@ nav {
   }
 }
 
+.header-bottom {
+  font-family: $special-font;
+   color: #fff;
+   font-size: 1rem;
+   .ghost {
+        display: none;
+    }
+}
 .skewed {
     margin-top: 120px;
     background-color: #282425;
