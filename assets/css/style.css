@@ -9,13 +9,6 @@
   clear: both;
 }
 
-@font-face {
-  font-family: 'redgarregular';
-  src: url("/assets/fonts/redgar-webfont.eot");
-  src: url("/assets/fonts/redgar-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/redgar-webfont.woff2") format("woff2"), url("/assets/fonts/redgar-webfont.woff") format("woff"), url("/assets/fonts/redgar-webfont.ttf") format("truetype"), url("/assets/fonts/redgar-webfont.svg#redgarregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 /* line 1, ../sass/partials/styleguide/type/_base-type.scss */
 html {
   font: normal 140%/1.65 serif;
@@ -457,7 +450,7 @@ ul.pager li a:visited {
 footer {
   color: #fff;
   margin-top: 2rem;
-  font-family: "redgarregular", serif;
+  font-family: "Chelsea Market", serif;
 }
 
 /* line 1, ../sass/partials/design/regions/_header.scss */
@@ -552,7 +545,7 @@ nav ul li {
 }
 /* line 57, ../sass/partials/design/regions/_header.scss */
 nav ul li a.link {
-  font-family: "redgarregular", serif;
+  font-family: "Chelsea Market", serif;
   color: #fff;
   text-decoration: none;
   font-size: 20px;
@@ -570,7 +563,7 @@ nav ul li a.link {
 
 /* line 71, ../sass/partials/design/regions/_header.scss */
 .header-bottom {
-  font-family: "redgarregular", serif;
+  font-family: "Chelsea Market", serif;
   color: #fff;
   font-size: 1rem;
 }
@@ -610,7 +603,7 @@ nav ul li a.link {
 
 /* line 99, ../sass/partials/design/regions/_header.scss */
 .skewed h3 {
-  font-family: "redgarregular", serif;
+  font-family: "Chelsea Market", serif;
   color: yellow;
   font-size: 30px;
   margin: 12px 10px 0px 10px;
