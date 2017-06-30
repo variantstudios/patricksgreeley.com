@@ -565,51 +565,79 @@ nav ul li a.link {
 .header-bottom {
   font-family: "Chelsea Market", serif;
   color: #fff;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+@media (min-width: 50em) {
+  /* line 71, ../sass/partials/design/regions/_header.scss */
+  .header-bottom {
+    font-size: 1rem;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .header-bottom {
   font-size: 1rem;
 }
-/* line 75, ../sass/partials/design/regions/_header.scss */
+/* line 79, ../sass/partials/design/regions/_header.scss */
 .header-bottom .ghost {
   display: none;
 }
 
-/* line 79, ../sass/partials/design/regions/_header.scss */
+/* line 83, ../sass/partials/design/regions/_header.scss */
 .skewed {
-  margin-top: 120px;
   background-color: #282425;
   height: 80px;
   padding-top: .5rem;
-  -webkit-transform: skewY(-10deg);
-      -ms-transform: skewY(-10deg);
-          transform: skewY(-10deg);
-  position: absolute;
-  top: -165px;
-  left: -8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
-@media (min-width: 75em) {
-  /* line 79, ../sass/partials/design/regions/_header.scss */
+@media (min-width: 50em) {
+  /* line 83, ../sass/partials/design/regions/_header.scss */
   .skewed {
+    margin-top: 120px;
+    -webkit-transform: skewY(-10deg);
+        -ms-transform: skewY(-10deg);
+            transform: skewY(-10deg);
+    position: absolute;
+    top: -165px;
+    left: -12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: 100px;
-    left: -58px;
     height: 100px;
   }
 }
 /* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .skewed {
+  margin-top: 120px;
+  -webkit-transform: skewY(-10deg);
+      -ms-transform: skewY(-10deg);
+          transform: skewY(-10deg);
+  position: absolute;
+  top: -165px;
+  left: -12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 100px;
-  left: -58px;
   height: 100px;
 }
+@media (min-width: 75em) {
+  /* line 83, ../sass/partials/design/regions/_header.scss */
+  .skewed {
+    left: -58px;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .skewed {
+  left: -58px;
+}
 
-/* line 99, ../sass/partials/design/regions/_header.scss */
+/* line 107, ../sass/partials/design/regions/_header.scss */
 .skewed h3 {
   font-family: "Chelsea Market", serif;
+  text-transform: uppercase;
   color: yellow;
   font-size: 30px;
   margin: 12px 10px 0px 10px;
 }
 @media (min-width: 75em) {
-  /* line 99, ../sass/partials/design/regions/_header.scss */
+  /* line 107, ../sass/partials/design/regions/_header.scss */
   .skewed h3 {
     margin: 12px 20px 0 20px;
     font-size: 50px;
@@ -621,17 +649,17 @@ nav ul li a.link {
   font-size: 50px;
 }
 
-/* line 111, ../sass/partials/design/regions/_header.scss */
+/* line 120, ../sass/partials/design/regions/_header.scss */
 .button.facebook {
   background-color: #469;
 }
-/* line 113, ../sass/partials/design/regions/_header.scss */
+/* line 122, ../sass/partials/design/regions/_header.scss */
 .button.facebook svg {
   height: 50px;
   fill: #fff;
 }
 
-/* line 118, ../sass/partials/design/regions/_header.scss */
+/* line 127, ../sass/partials/design/regions/_header.scss */
 .button, .button:visited {
   display: inline-block;
   padding: .5rem .8rem;
@@ -836,18 +864,17 @@ main, header, footer, section, aside {
 .untappd {
   margin-top: 12rem;
   background: #fff;
-  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
   position: relative;
 }
 @media (min-width: 50em) {
   /* line 1, ../sass/partials/design/regions/_untappd.scss */
   .untappd {
-    padding: 1.5rem;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
   }
 }
 /* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
 .no-mq .untappd {
-  padding: 1.5rem;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 /* line 2, ../sass/partials/design/regions/_about.scss */

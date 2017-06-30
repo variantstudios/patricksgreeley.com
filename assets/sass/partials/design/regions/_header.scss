@@ -71,33 +71,42 @@ nav {
 .header-bottom {
   font-family: $special-font;
    color: #fff;
-   font-size: 1rem;
+   font-size: .8rem;
+   @include breakpoint($bp-medium, $no-query: ".no-mq") {
+    font-size: 1rem;
+   }
+   text-transform: uppercase;
    .ghost {
         display: none;
     }
 }
 .skewed {
-    margin-top: 120px;
+    
     background-color: #282425;
     height: 80px;
     padding-top: .5rem;
-    transform: skewY(-10deg);
-    position: absolute;
-    top: -165px;
-    left: -8px;
-    border: 1px solid rgba(0, 0, 0, 0.1); 
+    
     //outline: 1px solid transparent;
     //box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.6);
-    @include breakpoint($bp-xlarge, $no-query: ".no-mq") {
+    @include breakpoint($bp-medium, $no-query: ".no-mq") {
+      margin-top: 120px;
+      transform: skewY(-10deg);
+      position: absolute;
+      top: -165px;
+      left: -12px;
+      border: 1px solid rgba(0, 0, 0, 0.1); 
       margin-top: 100px;
-      left: -58px;
       height: 100px;
+    }
+    @include breakpoint($bp-xlarge, $no-query: ".no-mq") {
+      left: -58px;
     }
 }
 
 
 .skewed h3 {
    font-family: $special-font;
+   text-transform: uppercase;
    color: yellow;
     font-size: 30px;
     margin: 12px 10px 0px 10px;
