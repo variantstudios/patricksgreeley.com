@@ -1,8 +1,9 @@
 .untappd {
-    margin-top: 9rem;
+    margin-top: 12rem;
     background: #fff;
     padding: 2.5rem 1.5rem 1.5rem 1.5rem;
     position: relative;
+
     @include breakpoint($bp-medium, $no-query: ".no-mq") {
         padding: 1.5rem;
     }
