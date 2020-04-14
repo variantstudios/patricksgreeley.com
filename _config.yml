@@ -27,3 +27,5 @@ typekit:
 google_analytics_tracking_id: "UA-48511474-1"
 
 exclude: ["vendor","node_modules","package.json","Gemfile","gulpfile.js","*.scss"]
+
+published: false
