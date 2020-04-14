@@ -1,1 +1,3 @@
 /* https://www.patricksgreeleyshop.com/
+/index.html https://www.patricksgreeleyshop.com/
+/index.htm https://www.patricksgreeleyshop.com/
